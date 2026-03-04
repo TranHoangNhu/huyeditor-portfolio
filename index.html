@@ -6,6 +6,9 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>ĐẶNG HOÀI HUY - Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="img/logo-huy-dang-editor.JPG" />
+    <link rel="apple-touch-icon" href="img/logo-huy-dang-editor.JPG" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -181,7 +184,7 @@
                         class="relative z-10 flex items-center justify-center gap-3 font-mono font-bold tracking-widest text-sm">
                         <span
                             class="material-symbols-outlined text-[20px] group-hover:animate-pulse">design_services</span>
-                        <span>XEM CV</span>
+                        <span>CV</span>
                     </div>
                 </button>
                 <button onclick="openPortfolioModal()"
@@ -189,7 +192,7 @@
                     <div
                         class="relative z-10 flex items-center justify-center gap-3 font-mono font-bold tracking-widest text-sm">
                         <span class="material-symbols-outlined text-[20px] group-hover:animate-pulse">play_circle</span>
-                        <span>XEM PORTFOLIO</span>
+                        <span>PORTFOLIO</span>
                     </div>
                 </button>
             </div>
@@ -199,11 +202,15 @@
         <div class="absolute bottom-0 left-0 z-30 w-full px-6 sm:px-16 lg:px-24 pb-12 lg:pb-16 pointer-events-none">
             <div class="flex flex-col gap-4 max-w-4xl animate-fade-in pointer-events-auto"
                 style="animation-delay: 0.2s;">
-                <!-- Name Title -->
-                <h1
-                    class="font-display font-bold text-5xl sm:text-6xl lg:text-[80px] leading-[0.9] tracking-tighter text-white uppercase mix-blend-screen">
-                    ĐẶNG <br class="sm:hidden" />HOÀI HUY
-                </h1>
+                <!-- Name Title & Logo -->
+                <div class="flex items-center gap-4 sm:gap-6 mb-2">
+                    <img src="img/logo-huy-dang-editor.JPG" alt="Đặng Hoài Huy Logo"
+                        class="w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28 object-cover rounded-full shadow-[0_0_20px_rgba(230,10,21,0.2)] border-2 border-white/20" />
+                    <h1
+                        class="font-display font-bold text-5xl sm:text-6xl lg:text-[80px] leading-[0.9] tracking-tighter text-white uppercase mix-blend-screen">
+                        ĐẶNG <br class="sm:hidden" />HOÀI HUY
+                    </h1>
+                </div>
                 <!-- Scrolling Role Marquee -->
                 <div
                     class="w-full overflow-hidden border-y border-white/10 py-2.5 bg-black/20 backdrop-blur-sm relative group">

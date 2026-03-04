@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ĐẶNG HOÀI HUY - Portfolio</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e60a15",
+                        "background-light": "#f8f5f6",
+                        "background-dark": "#050505",
+                        "surface": "#141414",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "2px",
+                        "sm": "2px",
+                        "lg": "4px",
+                        "xl": "8px",
+                        "full": "9999px"
+                    },
+                    animation: {
+                        'marquee': 'marquee 25s linear infinite',
+                        'fade-in': 'fadeIn 1.5s ease-out forwards',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        /* Custom noise texture */
+        .bg-noise {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Utility to hide scrollbar but keep functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="bg-background-dark text-slate-100 overflow-x-hidden antialiased selection:bg-primary selection:text-white">
+    <!-- Global Noise Overlay -->
+    <div class="bg-noise"></div>
+    <!-- The Marquee (Home) -->
+    <main class="relative h-screen w-full overflow-hidden">
+        <!-- Video Background Layer -->
+        <!-- Using a placeholder video loop that simulates a cinematic showreel atmosphere -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black/50 z-10"></div> <!-- Dimming Overlay -->
+            <video autoplay="" class="h-full w-full object-cover opacity-80 animate-fade-in"
+                data-alt="Abstract cinematic background video loop showing blurry city lights and motion" loop=""
+                muted="" playsinline=""
+                poster="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&amp;w=2525&amp;auto=format&amp;fit=crop">
+                <source src="https://videos.pexels.com/video-files/3129957/3129957-uhd_2560_1440_25fps.mp4"
+                    type="video/mp4" />
+                <!-- Fallback image if video fails -->
+                <img alt="Cinematic dark blurry background" class="h-full w-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH1ZPW1XxlpbUzzVCihFp-bn2L3beaAgzq59O4PdJ3jk3CalPyGu-jc6_s59Ou3ziMf7a9TJkJD-X1e-T1q4pIElNV4PhtHkFn0rnXl0q014BSLvEhsMX_NOJrLs3-DMUuatENEAIp4pWT9EEAL2KN12sZunq6HBRzJ8DER4iZTb5PZswX_4MTIzlcI3DA_HhClD6bzTdnwpZW-Ed5xtmptmV0zvgzdGeCnpjVCS0eMA4j7erWOuBPxpizIjHHnsNV5OJleZnsNw" />
+            </video>
+        </div>
+        <!-- Top Navigation (Absolute) -->
+        <nav class="absolute top-0 left-0 w-full z-40 px-6 py-6 flex justify-between items-start animate-fade-in"
+            style="animation-delay: 0.5s;">
+            <div class="flex flex-col gap-1">
+                <span class="font-mono text-xs text-slate-400 tracking-widest">CAM A // <span
+                        class="text-primary">REC</span></span>
+                <span class="font-mono text-xs text-slate-500">ISO 800</span>
+            </div>
+            <div class="flex gap-8 items-center">
+                <a class="font-mono text-xs hover:text-primary transition-colors tracking-widest text-slate-300"
+                    href="#">PROJECTS</a>
+                <a class="font-mono text-xs hover:text-primary transition-colors tracking-widest text-slate-300"
+                    href="#">TIMELINE</a>
+                <a class="font-mono text-xs hover:text-primary transition-colors tracking-widest text-slate-300"
+                    href="#">ABOUT</a>
+                <div class="w-2 h-2 rounded-full bg-primary animate-pulse-slow ml-2"></div>
+            </div>
+        </nav>
+        <!-- Main Content Overlay -->
+        <div class="relative z-30 flex h-full w-full flex-col justify-end pb-12 sm:pb-20 px-6 sm:px-16 lg:px-24">
+            <!-- Hero Text Block -->
+            <div class="flex flex-col gap-6 max-w-5xl animate-fade-in" style="animation-delay: 0.2s;">
+                <!-- Name Title -->
+                <h1
+                    class="font-display font-bold text-6xl sm:text-7xl lg:text-[100px] leading-[0.9] tracking-tighter text-white uppercase mix-blend-screen">
+                    ĐẶNG <br class="sm:hidden" />HOÀI HUY
+                </h1>
+                <!-- Scrolling Role Marquee -->
+                <div
+                    class="w-full overflow-hidden border-y border-white/10 py-3 bg-black/20 backdrop-blur-sm relative group">
+                    <div class="whitespace-nowrap flex animate-marquee hover:[animation-play-state:paused]">
+                        <!-- Duplicated content for seamless loop -->
+                        <div class="flex items-center gap-8 px-4">
+                            <span
+                                class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">DIGITAL
+                                MARKETING</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                            <span class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">VIDEO
+                                EDITOR</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                            <span
+                                class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">CONTENT
+                                CREATOR</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                            <span
+                                class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">DIGITAL
+                                MARKETING</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                            <span class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">VIDEO
+                                EDITOR</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                            <span
+                                class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">CONTENT
+                                CREATOR</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                        </div>
+                        <div class="flex items-center gap-8 px-4">
+                            <span
+                                class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">DIGITAL
+                                MARKETING</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                            <span class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">VIDEO
+                                EDITOR</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                            <span
+                                class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">CONTENT
+                                CREATOR</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                            <span
+                                class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">DIGITAL
+                                MARKETING</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                            <span class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">VIDEO
+                                EDITOR</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                            <span
+                                class="text-primary font-mono text-sm sm:text-base tracking-widest font-medium">CONTENT
+                                CREATOR</span>
+                            <span
+                                class="text-slate-600 text-xs material-symbols-outlined scale-75">emergency_recording</span>
+                        </div>
+                    </div>
+                    <!-- Gradient masks for marquee edges -->
+                    <div
+                        class="absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-background-dark/80 to-transparent z-10 pointer-events-none">
+                    </div>
+                    <div
+                        class="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-background-dark/80 to-transparent z-10 pointer-events-none">
+                    </div>
+                </div>
+                <!-- Action Area -->
+                <div class="flex flex-col sm:flex-row items-start sm:items-center gap-8 mt-6">
+                    <button
+                        class="group relative overflow-hidden bg-transparent border border-white/80 hover:bg-white text-white hover:text-black transition-all duration-300 ease-out h-14 px-8 rounded-sm min-w-[180px]">
+                        <div
+                            class="relative z-10 flex items-center justify-center gap-3 font-mono font-bold tracking-widest text-sm">
+                            <span
+                                class="material-symbols-outlined text-[20px] group-hover:animate-pulse">play_circle</span>
+                            <span>WATCH REEL</span>
+                        </div>
+                    </button>
+                    <div class="flex items-center gap-4 text-slate-500 font-mono text-xs">
+                        <span class="flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">schedule</span>
+                            00:00:14:22
+                        </span>
+                        <span class="h-px w-8 bg-slate-700"></span>
+                        <span>4K RAW</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative UI Elements (Camera HUD) -->
+        <div class="absolute bottom-8 right-8 z-30 hidden lg:block opacity-50">
+            <div class="border-r border-b border-white/30 w-8 h-8"></div>
+        </div>
+        <div class="absolute top-8 left-8 z-30 hidden lg:block opacity-50">
+            <div class="border-l border-t border-white/30 w-8 h-8"></div>
+        </div>
+        <div class="absolute top-8 right-8 z-30 hidden lg:block opacity-50">
+            <div class="border-r border-t border-white/30 w-8 h-8"></div>
+        </div>
+        <div class="absolute bottom-8 left-8 z-30 hidden lg:block opacity-50">
+            <div class="border-l border-b border-white/30 w-8 h-8"></div>
+        </div>
+    </main>
+</body>
+
+</html>

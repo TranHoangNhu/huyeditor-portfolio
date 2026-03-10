@@ -121,11 +121,11 @@
             <div class="whitespace-nowrap flex animate-marquee hover:[animation-play-state:paused]">
                 <div class="flex items-center gap-12 px-6">
                     <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Email:
-                        lienhe@danghoaihuy.com</span>
+                        huydangforwork@gmail.com</span>
                     <span
                         class="text-primary text-[10px] material-symbols-outlined scale-[0.6]">emergency_recording</span>
-                    <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Hotline/Zalo:
-                        0123 456 789</span>
+                    <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">SĐT/ZALO:
+                        0971 627 929</span>
                     <span
                         class="text-primary text-[10px] material-symbols-outlined scale-[0.6]">emergency_recording</span>
                     <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Available for
@@ -133,11 +133,11 @@
                     <span
                         class="text-primary text-[10px] material-symbols-outlined scale-[0.6]">emergency_recording</span>
                     <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Email:
-                        lienhe@danghoaihuy.com</span>
+                        huydangforwork@gmail.com</span>
                     <span
                         class="text-primary text-[10px] material-symbols-outlined scale-[0.6]">emergency_recording</span>
-                    <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Hotline/Zalo:
-                        0123 456 789</span>
+                    <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">SĐT/ZALO:
+                        0971 627 929</span>
                     <span
                         class="text-primary text-[10px] material-symbols-outlined scale-[0.6]">emergency_recording</span>
                     <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Available for
@@ -147,11 +147,11 @@
                 </div>
                 <div class="flex items-center gap-12 px-6">
                     <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Email:
-                        lienhe@danghoaihuy.com</span>
+                        huydangforwork@gmail.com</span>
                     <span
                         class="text-primary text-[10px] material-symbols-outlined scale-[0.6]">emergency_recording</span>
-                    <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Hotline/Zalo:
-                        0123 456 789</span>
+                    <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">SĐT/ZALO:
+                        0971 627 929</span>
                     <span
                         class="text-primary text-[10px] material-symbols-outlined scale-[0.6]">emergency_recording</span>
                     <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Available for
@@ -159,11 +159,11 @@
                     <span
                         class="text-primary text-[10px] material-symbols-outlined scale-[0.6]">emergency_recording</span>
                     <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Email:
-                        lienhe@danghoaihuy.com</span>
+                        huydangforwork@gmail.com</span>
                     <span
                         class="text-primary text-[10px] material-symbols-outlined scale-[0.6]">emergency_recording</span>
-                    <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Hotline/Zalo:
-                        0123 456 789</span>
+                    <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">SĐT/ZALO:
+                        0971 627 929</span>
                     <span
                         class="text-primary text-[10px] material-symbols-outlined scale-[0.6]">emergency_recording</span>
                     <span class="text-white/70 font-mono text-[10px] sm:text-xs tracking-widest uppercase">Available for
@@ -185,6 +185,15 @@
                         <span
                             class="material-symbols-outlined text-[20px] group-hover:animate-pulse">design_services</span>
                         <span>CV</span>
+                    </div>
+                </button>
+
+                <button onclick="openProjectsModal()"
+                    class="group relative overflow-hidden bg-transparent border border-white/80 hover:bg-white hover:border-white text-white hover:text-black transition-all duration-300 ease-out h-14 px-10 rounded-sm min-w-[200px] flex items-center justify-center">
+                    <div
+                        class="relative z-10 flex items-center justify-center gap-3 font-mono font-bold tracking-widest text-sm">
+                        <span class="material-symbols-outlined text-[20px] group-hover:animate-pulse">movie</span>
+                        <span>PROJECTS</span>
                     </div>
                 </button>
                 <button onclick="openPortfolioModal()"
@@ -294,6 +303,29 @@
         </div>
     </main>
 
+
+    <!-- Video Preview Modal -->
+    <div id="video-preview-modal"
+        class="fixed inset-0 z-[150] flex items-center justify-center hidden bg-black/95 backdrop-blur-xl transition-opacity duration-300">
+        <button onclick="closeVideoPreview()"
+            class="absolute top-6 right-6 z-[160] text-white/50 hover:text-white transition-all focus:outline-none bg-black/40 hover:bg-black p-2 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-3xl font-light">close</span>
+        </button>
+        <div
+            class="w-full h-full sm:w-[90vw] sm:h-[80vh] flex items-center justify-center p-4 sm:p-0 max-w-[1200px] mx-auto relative pt-16 sm:pt-0">
+            <div
+                class="w-full aspect-video bg-black rounded-lg overflow-hidden shadow-2xl border border-white/10 relative">
+                <!-- Loader -->
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <span class="material-symbols-outlined text-white/50 animate-spin text-4xl"
+                        style="font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24">progress_activity</span>
+                </div>
+                <iframe id="video-preview-iframe" class="w-full h-full relative z-10" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
     <!-- CV Modal -->
     <div id="cv-modal"
         class="fixed inset-0 z-50 flex items-center justify-center hidden bg-black/80 backdrop-blur-sm transition-opacity duration-300">
@@ -330,7 +362,7 @@
         });
     </script>
 
-    <!-- Portfolio Presentation Modal (Swiper JS with Thumbnails) -->
+    <!-- Portfolio Presentation Modal (StPageFlip) -->
     <div id="portfolio-modal"
         class="fixed inset-0 z-[100] flex items-center justify-center hidden bg-black/95 backdrop-blur-xl transition-opacity duration-300">
         <!-- Close Button -->
@@ -339,139 +371,226 @@
             <span class="material-symbols-outlined text-3xl font-light">close</span>
         </button>
 
-        <div class="w-full h-full flex flex-col pt-12 pb-6 px-4 md:px-12 relative max-w-[1920px] mx-auto">
-
-            <!-- Main Slider -->
-            <div
-                class="swiper mainPortfolioSwiper w-full h-[calc(100%-110px)] rounded-lg overflow-hidden bg-[#050505] shadow-2xl relative">
-                <div class="swiper-wrapper">
-                    <!-- Slides (1 to 10) -->
-                    <div class="swiper-slide flex items-center justify-center p-2 md:p-8"><img src="img/port-1.png"
-                            class="max-h-full max-w-full object-contain drop-shadow-2xl" /></div>
-                    <div class="swiper-slide flex items-center justify-center p-2 md:p-8"><img src="img/port-2.png"
-                            class="max-h-full max-w-full object-contain drop-shadow-2xl" /></div>
-                    <div class="swiper-slide flex items-center justify-center p-2 md:p-8"><img src="img/port-3.png"
-                            class="max-h-full max-w-full object-contain drop-shadow-2xl" /></div>
-                    <div class="swiper-slide flex items-center justify-center p-2 md:p-8"><img src="img/port-4.png"
-                            class="max-h-full max-w-full object-contain drop-shadow-2xl" /></div>
-                    <div class="swiper-slide flex items-center justify-center p-2 md:p-8"><img src="img/port-5.png"
-                            class="max-h-full max-w-full object-contain drop-shadow-2xl" /></div>
-                    <div class="swiper-slide flex items-center justify-center p-2 md:p-8"><img src="img/port-6.png"
-                            class="max-h-full max-w-full object-contain drop-shadow-2xl" /></div>
-                    <div class="swiper-slide flex items-center justify-center p-2 md:p-8"><img src="img/port-7.png"
-                            class="max-h-full max-w-full object-contain drop-shadow-2xl" /></div>
-                    <div class="swiper-slide flex items-center justify-center p-2 md:p-8"><img src="img/port-8.png"
-                            class="max-h-full max-w-full object-contain drop-shadow-2xl" /></div>
-                    <div class="swiper-slide flex items-center justify-center p-2 md:p-8"><img src="img/port-9.png"
-                            class="max-h-full max-w-full object-contain drop-shadow-2xl" /></div>
-                    <div class="swiper-slide flex items-center justify-center p-2 md:p-8"><img src="img/port-10.png"
-                            class="max-h-full max-w-full object-contain drop-shadow-2xl" /></div>
-                </div>
-
-                <!-- Main Navigation -->
-                <div
-                    class="swiper-button-prev !text-white !w-14 !h-14 !bg-black/50 hover:!bg-primary rounded-full backdrop-blur-md transition-colors after:!text-2xl hidden sm:flex">
-                </div>
-                <div
-                    class="swiper-button-next !text-white !w-14 !h-14 !bg-black/50 hover:!bg-primary rounded-full backdrop-blur-md transition-colors after:!text-2xl hidden sm:flex">
-                </div>
-                <!-- Top Counter -->
-                <div
-                    class="absolute top-4 left-6 z-[110] font-mono text-white/50 text-sm tracking-widest mix-blend-difference counter-display">
-                    01 / 10</div>
-            </div>
-
-            <!-- Thumbnail Slider -->
-            <div class="swiper thumbPortfolioSwiper w-full h-[80px] mt-6 px-12">
-                <div class="swiper-wrapper flex items-center h-full">
-                    <!-- Thumbnail Slides -->
-                    <div class="swiper-slide cursor-pointer opacity-40 hover:opacity-100 transition-opacity !w-auto">
-                        <img src="img/port-1.png"
-                            class="h-[60px] w-auto max-w-[120px] object-cover rounded-sm border border-white/10" />
-                    </div>
-                    <div class="swiper-slide cursor-pointer opacity-40 hover:opacity-100 transition-opacity !w-auto">
-                        <img src="img/port-2.png"
-                            class="h-[60px] w-auto max-w-[120px] object-cover rounded-sm border border-white/10" />
-                    </div>
-                    <div class="swiper-slide cursor-pointer opacity-40 hover:opacity-100 transition-opacity !w-auto">
-                        <img src="img/port-3.png"
-                            class="h-[60px] w-auto max-w-[120px] object-cover rounded-sm border border-white/10" />
-                    </div>
-                    <div class="swiper-slide cursor-pointer opacity-40 hover:opacity-100 transition-opacity !w-auto">
-                        <img src="img/port-4.png"
-                            class="h-[60px] w-auto max-w-[120px] object-cover rounded-sm border border-white/10" />
-                    </div>
-                    <div class="swiper-slide cursor-pointer opacity-40 hover:opacity-100 transition-opacity !w-auto">
-                        <img src="img/port-5.png"
-                            class="h-[60px] w-auto max-w-[120px] object-cover rounded-sm border border-white/10" />
-                    </div>
-                    <div class="swiper-slide cursor-pointer opacity-40 hover:opacity-100 transition-opacity !w-auto">
-                        <img src="img/port-6.png"
-                            class="h-[60px] w-auto max-w-[120px] object-cover rounded-sm border border-white/10" />
-                    </div>
-                    <div class="swiper-slide cursor-pointer opacity-40 hover:opacity-100 transition-opacity !w-auto">
-                        <img src="img/port-7.png"
-                            class="h-[60px] w-auto max-w-[120px] object-cover rounded-sm border border-white/10" />
-                    </div>
-                    <div class="swiper-slide cursor-pointer opacity-40 hover:opacity-100 transition-opacity !w-auto">
-                        <img src="img/port-8.png"
-                            class="h-[60px] w-auto max-w-[120px] object-cover rounded-sm border border-white/10" />
-                    </div>
-                    <div class="swiper-slide cursor-pointer opacity-40 hover:opacity-100 transition-opacity !w-auto">
-                        <img src="img/port-9.png"
-                            class="h-[60px] w-auto max-w-[120px] object-cover rounded-sm border border-white/10" />
-                    </div>
-                    <div class="swiper-slide cursor-pointer opacity-40 hover:opacity-100 transition-opacity !w-auto">
-                        <img src="img/port-10.png"
-                            class="h-[60px] w-auto max-w-[120px] object-cover rounded-sm border border-white/10" />
-                    </div>
+        <div class="w-full h-full flex flex-col pt-12 pb-6 px-2 md:px-8 relative w-full max-w-[95vw] mx-auto transition-all"
+            id="portfolio-container-inner">
+            <div id="flipbook-container" class="w-full h-[calc(100%-40px)] flex items-center justify-center relative">
+                <div id="flipbook" class="mx-auto block">
+                    <div class="page bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)]"><img src="img/port-pages/page_1.jpg"
+                            class="w-full h-full object-fill pointer-events-none" /></div>
+                    <div class="page bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)]"><img src="img/port-pages/page_2.jpg"
+                            class="w-full h-full object-fill pointer-events-none" /></div>
+                    <div class="page bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)]"><img src="img/port-pages/page_3.jpg"
+                            class="w-full h-full object-fill pointer-events-none" /></div>
+                    <div class="page bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)]"><img src="img/port-pages/page_4.jpg"
+                            class="w-full h-full object-fill pointer-events-none" /></div>
+                    <div class="page bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)]"><img src="img/port-pages/page_5.jpg"
+                            class="w-full h-full object-fill pointer-events-none" /></div>
+                    <div class="page bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)]"><img src="img/port-pages/page_6.jpg"
+                            class="w-full h-full object-fill pointer-events-none" /></div>
+                    <div class="page bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)]"><img src="img/port-pages/page_7.jpg"
+                            class="w-full h-full object-fill pointer-events-none" /></div>
+                    <div class="page bg-white shadow-[0_0_10px_rgba(0,0,0,0.5)]"><img src="img/port-pages/page_8.jpg"
+                            class="w-full h-full object-fill pointer-events-none" /></div>
                 </div>
             </div>
+            <div class="w-full flex justify-center mt-2 gap-4 z-[130]">
+                <button onclick="if(pageFlipObj) pageFlipObj.flipPrev()"
+                    class="px-4 py-2 bg-black/50 border border-white/20 rounded-full text-white/70 hover:text-white hover:bg-primary transition-all text-sm font-mono"><span
+                        class="material-symbols-outlined align-middle">arrow_back_ios_new</span> PREV</button>
 
+                <button onclick="toggleZoom()" id="zoom-btn"
+                    class="px-4 py-2 bg-black/50 border border-white/20 rounded-full text-white/70 hover:text-white hover:bg-primary transition-all text-sm font-mono"><span
+                        id="zoom-icon" class="material-symbols-outlined align-middle">fullscreen</span> <span
+                        id="zoom-text">ZOOM</span></button>
+
+                <button onclick="if(pageFlipObj) pageFlipObj.flipNext()"
+                    class="px-4 py-2 bg-black/50 border border-white/20 rounded-full text-white/70 hover:text-white hover:bg-primary transition-all text-sm font-mono">NEXT
+                    <span class="material-symbols-outlined align-middle">arrow_forward_ios</span></button>
+            </div>
         </div>
     </div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        let mainPortfolioSwiper;
-        let thumbPortfolioSwiper;
+    <!-- Projects Modal -->
+    <div id="projects-modal"
+        class="fixed inset-0 z-[100] flex flex-col items-center justify-center hidden bg-black transition-opacity duration-300">
+        <!-- Close Button -->
+        <button onclick="closeProjectsModal()"
+            class="absolute top-6 right-6 z-[120] text-white/50 hover:text-white transition-all focus:outline-none bg-black/40 hover:bg-black p-2 rounded-full cursor-pointer">
+            <span class="material-symbols-outlined text-3xl font-light">close</span>
+        </button>
 
-        function initSwiperGallery() {
-            if (!thumbPortfolioSwiper) {
-                // Initialize Thumbnails
-                thumbPortfolioSwiper = new Swiper('.thumbPortfolioSwiper', {
-                    spaceBetween: 12,
-                    slidesPerView: 'auto',
-                    freeMode: true,
-                    watchSlidesProgress: true,
-                    centerInsufficientSlides: true,
-                });
+        <!-- Dynamic Background image for Projects Modal -->
+        <div id="projects-modal-bg"
+            class="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-all duration-700 w-full h-full ease-in-out">
+            <div class="absolute inset-0 bg-black/40 backdrop-blur-sm z-10 w-full h-full"></div>
+        </div>
+
+        <div class="relative z-20 w-full max-w-[1400px] h-full flex flex-col pt-20 pb-8 px-4 md:px-12 mx-auto">
+            <h2
+                class="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter mb-8 self-center drop-shadow-md">
+                LIBRARY
+            </h2>
+            <div id="projects-tabs" class="flex flex-wrap justify-center gap-4 mb-8 w-full">
+            </div>
+            <div class="flex-1 w-full overflow-y-auto px-2 custom-scrollbar">
+                <div id="projects-grid"
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full pb-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const videosData = [{ "category": "Motion Graphic", "videos": [{ "id": "1RCBZu5NlKDmqWXSyDYTplcIV33rcNzdQ", "name": "Motion li\u00ean qu\u00e2n.mp4", "link": "https://drive.google.com/file/d/1RCBZu5NlKDmqWXSyDYTplcIV33rcNzdQ/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMzocKFNPdxidjXLoVpliV-LjRGBgWaWNMylZalQxRWwX0e98UgXm-xxCIoDKF3QR8ia4_LLNUB0KTFLGWU8tKWRtCpFa6vVHa7ZR9u6nZZNsw=s220" }, { "id": "1lQLO3HqxIwyfF0XMyFbF7WEAFB-tQa3Y", "name": "Logo design green.mp4", "link": "https://drive.google.com/file/d/1lQLO3HqxIwyfF0XMyFbF7WEAFB-tQa3Y/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOUnN8rGYeRZl_P2LRCFwHHlGKvFm7p74E9yuMWjkEfEa2hpouAmThUdWv9bzR22LGwYXB-KRUao8T6PuIFAlWuDlSsu_piyIRzKfi1gmSJx3U=s220" }, { "id": "1ozRFV057TlhVTVs_GA4RBVfk61L8_FwZ", "name": "Motion game.mp4", "link": "https://drive.google.com/file/d/1ozRFV057TlhVTVs_GA4RBVfk61L8_FwZ/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPycBdSQ0_SEJ3386X0N-duMDQMJRJDAE1zuljpqY5K0P-dbmu_p6RY6veqVmhZLZXxuaFncOucUPUZe-N7E0p2WILeSgSPhXgBjYAWfHXSTGU=s220" }, { "id": "1Jo-Z3fZloSxjXWvQhcdssRKZ43CjD9gX", "name": "Motion Graphic Editor.mp4", "link": "https://drive.google.com/file/d/1Jo-Z3fZloSxjXWvQhcdssRKZ43CjD9gX/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNXElKQV44Ma67n_iaqmKDlXEw521mJ28dpT64HE0SrMYSp8Iz4Vlb0_5p-2MX3bRAjj07RddmujkT4HoZhlxZC_PS_XGjzzRwoMSNH9v49tHQ=s220" }, { "id": "1nz7VDQb58zLxWrX4UCbx9hiuW3zLrViM", "name": "Motion Logo3.mp4", "link": "https://drive.google.com/file/d/1nz7VDQb58zLxWrX4UCbx9hiuW3zLrViM/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMgiOLvBZj2kJuJvoiVE5oUbiBOAAVM3hVzJlo0kXH-Zp5qtakaKIzNjnYlyYbCaIZtdGjCplpAxeBqGPxF-KNlzBc1l0WQUF4Cuw4kESMMvcM=s220" }, { "id": "1GdRCXm0SNTdVk5poIxh2OV8dozU_96c0", "name": "Motion logo 2.mp4", "link": "https://drive.google.com/file/d/1GdRCXm0SNTdVk5poIxh2OV8dozU_96c0/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBM6XX3Uq7rIqv-NAJmLho-1vNqP0u_KLVGqPAiZ3xHHWc8fe4-CSaDozaD4_T3rSvQ9Cv7dJP_DOYDA78StCt2N2J7xz3Vmz6_bLFtuVZSkloc=s220" }, { "id": "1ZUr0C-JX-jTllGikUQ_Hy5VV24ys5xw_", "name": "Motion Logo 1.mp4", "link": "https://drive.google.com/file/d/1ZUr0C-JX-jTllGikUQ_Hy5VV24ys5xw_/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPkiAPtNodq1KWKGP_E-J_NuImx0__7sH5PmLoOuel6lLRj8Ap6xunGVA0fo5bO1H3BIGNaNXqBvglynw2K9s3MgdygPyIZujk34M87Xrz9QeI=s220" }] }, { "category": "Freelance spa", "videos": [{ "id": "15ZezlOrAywZzYoIAo1xXDZSawEQTfWoA", "name": "Video4_Reels9_Ver3.mp4", "link": "https://drive.google.com/file/d/15ZezlOrAywZzYoIAo1xXDZSawEQTfWoA/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMSQV28A4g34LsitZUPtRU7x2mSRD3S62MGpwe_kJ16DvQZtFkm0-n-BSmE9IdueqeWEVqxzDsTZzFnbi7HK813VS2AIamFFepsg6PaFpTdNFM=s220" }, { "id": "1xgvGIuvjP2lLiVzcq0QLBTHIFrz44yMJ", "name": "Video5 New Year_Ver1.mp4", "link": "https://drive.google.com/file/d/1xgvGIuvjP2lLiVzcq0QLBTHIFrz44yMJ/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOUQbqwS4T_1VQ2SnYHpVpVMNvUIegK0ijEkNvWnvo-J_-xSkeqR4ajI7vGG1aOa6niJUYHo8JYjo6TpmxYvkjg8JUn_SgE9E0tR_S4vqF869E=s220" }, { "id": "1JYZHQsoGpWx95xuJaiJ25ERH9W7ecWJM", "name": "Video 3_Reels8_Ver3.mp4", "link": "https://drive.google.com/file/d/1JYZHQsoGpWx95xuJaiJ25ERH9W7ecWJM/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMz8ZRzRtNIvq7H2gMdjzGCJh4dnx45rcFqsVHwgl1PPmjhpTD9IjqEtTIchkMOADtnewwFQZ3oZDnAoL9BC6hOfbFoP-V1m5_tYvkxLxKRmUQ=s220" }, { "id": "1DSALmMgMs6emvb-n3kVvhxjcSncXb27W", "name": "Video 2_NewYear_Ver1.mp4", "link": "https://drive.google.com/file/d/1DSALmMgMs6emvb-n3kVvhxjcSncXb27W/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMM7E6vicx-sUr9KGoIZv7z1vq8EXOKy3ZK2Fq4fsXXTWtov4toS8824w9AlnfYbMoHAlbQAdAU3NubtTeNyItVOAkFkPgiLGFmjkget1ud8NI=s220" }, { "id": "14ANJFzztNVLGYO9EBAUczaPdFUqZsW8D", "name": "Video 1_Noel_Ver2.mp4", "link": "https://drive.google.com/file/d/14ANJFzztNVLGYO9EBAUczaPdFUqZsW8D/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPn4x4JVvdHaZ0Rb79Nz3NUivzzJpHOPJwmF1epn6sJdfvVvEESl_4zUIbVZd_xg64yt7mrCX5RVulOMs4D_27A5SEE_gtB2wqI45ircfDK7dE=s220" }, { "id": "1CFITL2rxd5cOpiZHsekbbY3RRDhJzWig", "name": "TEST_VER2.mp4", "link": "https://drive.google.com/file/d/1CFITL2rxd5cOpiZHsekbbY3RRDhJzWig/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPG8W0sokZnGL2Kt9MpQ_TISpyztO6J5k468QbEIDP4fx82NxK5xGOMtseA_-SHYw-5roOy8My2HOwNZMMlixXiWA5_aCcgcPuKhOcmMncTzrs=s220" }, { "id": "1sndrc2rBZse8UqrrdOi3mZeiPKkOoDBt", "name": "TEST_VER 1.mp4", "link": "https://drive.google.com/file/d/1sndrc2rBZse8UqrrdOi3mZeiPKkOoDBt/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNSysbf53WwcMjqmKNhOrVi7qOfe46-Huyx5vdKs5BFObeKsVokTF9NPc1otu5vqHig9dPOTV_KDyaBcrTv6mqGxeyjlA0Ey7pVZ3g7VSBF4u4=s220" }, { "id": "1Tk24pIDatM1_rTcsdq-lrrkhzmdULmj_", "name": "Post FB.mp4", "link": "https://drive.google.com/file/d/1Tk24pIDatM1_rTcsdq-lrrkhzmdULmj_/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPnxOa-nooUp0UFfitXEEMbp2QztiPt-2HrJhVfN9rblSl_jd8N6pFWchjIF5btBOf2-rjCk5uSvI0AnzCH9qmAbI50mRhhrfsAa1P92G1TCR8=s220" }] }, { "category": "Short video", "videos": [{ "id": "1JXslMYbqG6HtON3LkZao0WizXnGycFxv", "name": "FSave.com_Reel_Media_001_3134928690019970v.mp4", "link": "https://drive.google.com/file/d/1JXslMYbqG6HtON3LkZao0WizXnGycFxv/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMiznJvRgKSDUDP0TUGG9WPjjqqgvqT4GOWRNay8cWIroLfHYg9QD9yGvyHgimKZrLSk3B4XE8NfGOIy-MOYlxNqapCVMAZqSkqN4OKryL6kd8=s220" }, { "id": "1IJw0Mh_XoG5Uz2sUrCbQGFpOdZEWr0lD", "name": "FSave.com_Reel_Media_001_486306300420933.mp4", "link": "https://drive.google.com/file/d/1IJw0Mh_XoG5Uz2sUrCbQGFpOdZEWr0lD/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMQ_88KrZjqt9sqxtAD8YfLH_3xDb82d2HHC0TiZX3tkYBMy25bPgMQyZgwj5XGvxqWQXRGEPUHP9qL-8u_OMH2XhJgufG5YoN4smxSr1Bc3mM=s220" }, { "id": "1yPOkTgIfeqz6wEdYHk2NcInZKkqNfTxb", "name": "AQO0PbJdENxiUictKOQQP9pdhiNe9nXy-qCAGWY5mahPS44mSxJZORBPensmvxPfqDTo7v0EuaDDKGH3BY5kd3nU.mp4", "link": "https://drive.google.com/file/d/1yPOkTgIfeqz6wEdYHk2NcInZKkqNfTxb/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPaiZMwLUFXzxzfwvLUwDbR34rIKnf8LsBNm7OSdC47QU9abr8g5_apAp7mExkZRUcn19VaKk7TqK328qEkG5OClf9JH3NOyJf9T-1JRy8h6p0=s220" }, { "id": "1TI7aji5CXN1VJFbbtqRhTZPXJPNs9Ogd", "name": "AQOT3XIdLwax_etRS4N1XxTw4UjCukWctIYYi15A-OucyWlT_PsWxUd9WNIwG9pl3veEWfiqSdkLoYDnWJWH48UMCVV1PJ-xVwU.mp4", "link": "https://drive.google.com/file/d/1TI7aji5CXN1VJFbbtqRhTZPXJPNs9Ogd/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP1G73Z9a8qICzLroGLBdFFyJ5cvQaNpE6s2LBeG5vYqn_nyngj9XEuj6xwOYmf5UbAsIOneBb-OnbA_IAEK0XDFqWWL-HyqyuDsl24RPr_uRU=s220" }, { "id": "1OKwMxkEAz5o0noGKT2_yoedwlNj4QzjW", "name": "Visa M\u1ef9 1.5 c\u1ee7.mov", "link": "https://drive.google.com/file/d/1OKwMxkEAz5o0noGKT2_yoedwlNj4QzjW/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBM0jEEhMpzq922QoGTJ6oHPrbw2E02xUkwKb9_cpX_z_3zYAvGBTy3GykxKODc65OIKrbyUKvkbiYpCs6B92MLRc49ILTnuW-lJ8m9CAa65OBQ=s220" }, { "id": "1QEdUg_PZ0LSAk687SX23IaBoz5wpZZ76", "name": "C\u00e2u tr\u1ea3 l\u1eddi.mp4", "link": "https://drive.google.com/file/d/1QEdUg_PZ0LSAk687SX23IaBoz5wpZZ76/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPnKZtW05z_vLesutg1Ksq68DJ9xV_Jrcmdrohw3XUMH8qiEEhhzDBQ2O9dfWE2Fgpbq4jfU5bj-_9fAEFsCdqX1hyerdMk7pEG7meatwZfxMU=s220" }, { "id": "1mjBScufzhbwe-MAyIb9TQVYF6Ttvr_9K", "name": "H\u01b0\u1edbng d\u1eabn pv Visa M\u1ef9.mp4", "link": "https://drive.google.com/file/d/1mjBScufzhbwe-MAyIb9TQVYF6Ttvr_9K/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBO8eRECDWfPr6GAcEGNYpvzBh4j-bcrKWpuKG7jctZez5E68_McPFTcdYf7no7F9B9fKiPh07lnPlwXwibKNQs-VQGx6Cgp_rFH8MueRYQ4qUg=s220" }, { "id": "1yP-3t4vjkMw9p9XCdydY3_qu3DfXLAUK", "name": "VISA \u0110O\u00c0N TQ - VID2 - VerTT.mp4", "link": "https://drive.google.com/file/d/1yP-3t4vjkMw9p9XCdydY3_qu3DfXLAUK/view?usp=drivesdk", "thumbnail": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOMq_NanZojTrGASS4CnhBTD50qckeeHcSbJKJ-NCvZmmzMxa6TUDEUokYcTa4Qpnj-aMoKb-lKBthLZjVfknvobHoEPPN8PVUBFo2VmITE1RQ=s220" }] }];
+        const projectsModal = document.getElementById('projects-modal');
+        const projectsTabs = document.getElementById('projects-tabs');
+        const projectsGrid = document.getElementById('projects-grid');
+
+        function renderVideos(categoryName) {
+            // highlight active tab
+            Array.from(projectsTabs.children).forEach(btn => {
+                if (btn.innerText === categoryName) {
+                    btn.classList.add('bg-primary', 'border-primary', 'text-white');
+                    btn.classList.remove('border-white/20', 'hover:border-white', 'text-white/60');
+                } else {
+                    btn.classList.remove('bg-primary', 'border-primary', 'text-white');
+                    btn.classList.add('border-white/20', 'hover:border-white', 'text-white/60');
+                }
+            });
+
+            const cat = videosData.find(c => c.category === categoryName);
+            if (!cat) return;
+
+            const modalBg = document.getElementById('projects-modal-bg');
+            if (modalBg) {
+                if (categoryName === 'Motion Graphic') {
+                    modalBg.style.backgroundImage = "url('img/cyber-background.jpg')";
+                } else if (categoryName === 'Freelance spa') {
+                    modalBg.style.backgroundImage = "url('img/spa-background.jpg')";
+                } else if (categoryName === 'Short video') {
+                    modalBg.style.backgroundImage = "url('img/travel-background.jpg')";
+                }
             }
 
-            if (!mainPortfolioSwiper) {
-                // Initialize Main Presentation
-                mainPortfolioSwiper = new Swiper('.mainPortfolioSwiper', {
-                    spaceBetween: 20,
-                    effect: 'fade',
-                    fadeEffect: { crossFade: true },
-                    keyboard: { enabled: true, onlyInViewport: false },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    thumbs: {
-                        swiper: thumbPortfolioSwiper
-                    },
-                    grabCursor: true,
-                    on: {
-                        slideChange: function () {
-                            const current = (this.realIndex + 1).toString().padStart(2, '0');
-                            const total = this.slides.length.toString().padStart(2, '0');
-                            document.querySelector('.counter-display').innerText = `${current} / ${total}`;
-                        }
-                    }
+            projectsGrid.innerHTML = cat.videos.map(v => {
+                const previewUrl = v.link.replace('/view?usp=drivesdk', '/preview').replace('/view', '/preview');
+                const highResThumb = v.thumbnail ? v.thumbnail.replace('=s220', '=s800') : '';
+                return `
+                <button onclick="openVideoPreview('${previewUrl}')" class="group relative w-full block aspect-video rounded-lg overflow-hidden border border-white/10 hover:border-primary transition-all duration-300 shadow-xl bg-black text-left cursor-pointer">
+                    ${highResThumb ? `<img src="${highResThumb}" alt="${v.name}" class="w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-500" />` : '<div class="w-full h-full bg-slate-800 flex items-center justify-center"><span class="material-symbols-outlined text-white/30 text-4xl">movie</span></div>'}
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none bg-black/40">
+                         <span class="material-symbols-outlined text-6xl text-white drop-shadow-[0_0_15px_rgba(0,0,0,0.8)] scale-90 group-hover:scale-100 transition-transform duration-300">play_circle</span>
+                    </div>
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/90 to-transparent">
+                        <p class="text-sm font-medium text-white line-clamp-2 leading-tight drop-shadow-md pb-1">${v.name}</p>
+                    </div>
+                </button>
+                `;
+            }).join('');
+        }
+
+        function initProjects() {
+            if (projectsTabs.innerHTML.trim() === '') {
+                videosData.forEach(cat => {
+                    const btn = document.createElement('button');
+                    btn.className = 'px-6 py-2 rounded-full border border-white/20 text-white/60 text-sm font-mono tracking-wider transition-colors hover:border-white hover:text-white whitespace-nowrap cursor-pointer';
+                    btn.innerText = cat.category;
+                    btn.onclick = () => renderVideos(cat.category);
+                    projectsTabs.appendChild(btn);
                 });
+                if (videosData.length > 0) renderVideos(videosData[0].category);
+            }
+        }
+
+        function openProjectsModal() {
+            projectsModal.classList.remove('hidden');
+            initProjects();
+        }
+
+        function closeProjectsModal() {
+            projectsModal.classList.add('hidden');
+        }
+
+        // add escape key and outside click logic
+        projectsModal.addEventListener('click', function (e) {
+            if (e.target === projectsModal || e.target.classList.contains('px-4') || e.target.id === 'projects-grid') {
+                closeProjectsModal();
+            }
+        });
+        const videoPreviewModal = document.getElementById('video-preview-modal');
+        const videoPreviewIframe = document.getElementById('video-preview-iframe');
+
+        function openVideoPreview(url) {
+            videoPreviewModal.classList.remove('hidden');
+            videoPreviewIframe.src = url;
+        }
+
+        function closeVideoPreview() {
+            videoPreviewModal.classList.add('hidden');
+            videoPreviewIframe.src = '';
+        }
+
+        // add outside click logic for video preview
+        videoPreviewModal.addEventListener('click', function (e) {
+            if (e.target === videoPreviewModal || e.target.closest('.flex.items-center.justify-center.p-4')) {
+                // if they didn't click inside the iframe container, close it
+                closeVideoPreview();
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        let pageFlipObj = null;
+
+        function toggleZoom() {
+            const container = document.getElementById('portfolio-modal');
+            const icon = document.getElementById('zoom-icon');
+            const text = document.getElementById('zoom-text');
+
+            if (!document.fullscreenElement) {
+                if (container.requestFullscreen) {
+                    container.requestFullscreen().then(() => {
+                        icon.innerText = 'fullscreen_exit';
+                        text.innerText = 'EXIT ZOOM';
+                        if (pageFlipObj) setTimeout(() => pageFlipObj.update(), 200);
+                    }).catch(err => {
+                        console.error(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+                    });
+                }
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen().then(() => {
+                        icon.innerText = 'fullscreen';
+                        text.innerText = 'ZOOM';
+                        if (pageFlipObj) setTimeout(() => pageFlipObj.update(), 200);
+                    });
+                }
+            }
+        }
+
+        // Always update PageFlip when window resizes or fullscreen changes
+        document.addEventListener('fullscreenchange', () => {
+            if (pageFlipObj) setTimeout(() => pageFlipObj.update(), 100);
+        });
+
+        function initPageFlip() {
+            if (!pageFlipObj) {
+                const bookEl = document.getElementById("flipbook");
+                pageFlipObj = new St.PageFlip(bookEl, {
+                    width: 1280, // base page width (16:9)
+                    height: 720, // base page height
+                    size: "stretch", // Stretch to fit the container
+                    minWidth: 500,
+                    maxWidth: 1920,
+                    minHeight: 281,
+                    maxHeight: 1080,
+                    maxShadowOpacity: 0.5,
+                    showCover: true,
+                    mobileScrollSupport: true,
+                    disableFlipByClick: false
+                });
+                pageFlipObj.loadFromHTML(document.querySelectorAll("#flipbook .page"));
             }
         }
 
@@ -480,19 +599,25 @@
         function openPortfolioModal() {
             portfolioModal.classList.remove('hidden');
             setTimeout(() => {
-                initSwiperGallery();
-                mainPortfolioSwiper.update();
-                thumbPortfolioSwiper.update();
-            }, 50);
+                initPageFlip();
+                if (pageFlipObj) {
+                    pageFlipObj.update();
+                }
+            }, 100);
         }
 
         function closePortfolioModal() {
             portfolioModal.classList.add('hidden');
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+                document.getElementById('zoom-icon').innerText = 'fullscreen';
+                document.getElementById('zoom-text').innerText = 'ZOOM';
+            }
         }
 
         // Close when clicking outside Swiper images
         portfolioModal.addEventListener('click', function (e) {
-            if (e.target === portfolioModal || e.target.classList.contains('px-4') || e.target.classList.contains('swiper-slide')) {
+            if (e.target === portfolioModal || e.target.id === 'flipbook-container') {
                 closePortfolioModal();
             }
         });
@@ -500,8 +625,16 @@
         // Extend Escape key logic
         document.addEventListener('keydown', function (event) {
             if (event.key === "Escape") {
+                const videoPreviewModalObj = document.getElementById('video-preview-modal');
+                if (videoPreviewModalObj && !videoPreviewModalObj.classList.contains('hidden')) {
+                    closeVideoPreview();
+                    return; // Prevent closing the underlying projects modal
+                }
                 if (!portfolioModal.classList.contains('hidden')) {
                     closePortfolioModal();
+                }
+                if (!projectsModal.classList.contains('hidden')) {
+                    closeProjectsModal();
                 }
                 const cvModalObj = document.getElementById('cv-modal');
                 if (cvModalObj && !cvModalObj.classList.contains('hidden')) {
@@ -512,11 +645,7 @@
     </script>
 
     <style>
-        /* Custom Swiper Triggers */
-        .thumbPortfolioSwiper .swiper-slide-thumb-active {
-            opacity: 1 !important;
-            border-color: #e60a15 !important;
-        }
+        /* Replaced with Page Flip css */
     </style>
 
     <style>
@@ -538,6 +667,7 @@
             background: #555;
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
 </body>
 
 </html>

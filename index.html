@@ -474,7 +474,7 @@
 
             projectsGrid.innerHTML = cat.videos.map(v => {
                 const previewUrl = v.link.replace('/view?usp=drivesdk', '/preview').replace('/view', '/preview');
-                const highResThumb = v.thumbnail ? v.thumbnail.replace('=s220', '=s800') : '';
+                const highResThumb = v.id ? `https://drive.google.com/thumbnail?id=${v.id}&sz=w800` : '';
                 return `
                 <button onclick="openVideoPreview('${previewUrl}')" class="group relative w-full block aspect-video rounded-lg overflow-hidden border border-white/10 hover:border-primary transition-all duration-300 shadow-xl bg-black text-left cursor-pointer">
                     ${highResThumb ? `<img src="${highResThumb}" alt="${v.name}" class="w-full h-full object-cover opacity-100 group-hover:scale-105 transition-transform duration-500" />` : '<div class="w-full h-full bg-slate-800 flex items-center justify-center"><span class="material-symbols-outlined text-white/30 text-4xl">movie</span></div>'}
